@@ -1,0 +1,30 @@
+spring:
+    application:
+        name:
+            tdc-backend
+    datasource:
+        url:
+            jdbc:mysql://192.168.100.55:3306/tdc
+        username:  
+            root
+        password:
+           tftftf
+    jpa:
+        hibernate:
+            ddl-auto:
+                update
+            ejb:
+                interceptor: org.hibernate.cfg.ImprovedNamingStrategy
+                session_factory:
+                    use_native_entity_query: true
+        properties:
+            hibernate:
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+                    jdbc:
+                        time_zone: Africa/Casablanca
+server:
+    port:
+        9090
+
